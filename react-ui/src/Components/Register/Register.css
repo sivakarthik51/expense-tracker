@@ -1,0 +1,21 @@
+.register-form {
+    max-width: 100%;
+  }
+   .register-form-forgot {
+    float: right;
+  }
+  .register-form-button {
+    width: 100%;
+  }
+
+  .register-card {
+    width: 60%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .register-card{
+      width:100%;
+    }
+  }
+
+  

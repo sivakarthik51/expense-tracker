@@ -1,0 +1,19 @@
+.site-layout-content {
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 8%;
+  padding-top: 8%;
+  background: rgb(255, 255, 255);
+}
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(40, 60, 99, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
