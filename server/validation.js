@@ -19,5 +19,15 @@ const loginValidation = (data) => {
     return schema.validate(data);
 }
 
+const expenseValidation = (data) => {
+    const schema = Joi.object({
+        category: Joi.string().required(),
+        type: Joi.string().required(),
+        amount: Joi.number().min(0).required(),
+    });
+    return schema.validate(data);
+}
+
 module.exports.registerValidation = registerValidation;
 module.exports.loginValidation = loginValidation;
+module.exports.expenseValidation = expenseValidation;
