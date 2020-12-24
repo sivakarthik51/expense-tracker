@@ -6,8 +6,11 @@ const mongoose = require('mongoose');
 
 const dotenv = require('dotenv');
 
-//Routes
+//Authentication Routes
 const authRoute = require('./routes/auth');
+
+//Expenses Routes
+const expensesRoute = require('./routes/expenses');
 
 const verifyToken = require('./routes/verifyToken');
 
@@ -51,6 +54,7 @@ if (!isDev && cluster.isMaster) {
 
     //Route Middlewares
     app.use('/api/user',authRoute);
+    app.use('/api/expenses',expensesRoute);
 
     app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 
