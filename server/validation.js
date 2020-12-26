@@ -24,6 +24,7 @@ const expenseValidation = (data) => {
         category: Joi.string().required(),
         type: Joi.string().required(),
         amount: Joi.number().min(0).required(),
+        date:Joi.date()
     });
     return schema.validate(data);
 }
